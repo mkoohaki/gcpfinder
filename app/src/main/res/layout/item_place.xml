@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/placeTextView1"
+        android:layout_width="@dimen/btn_width60"
+        android:layout_height="@dimen/btn_height45"
+        android:layout_gravity="start"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/font"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/freeTextView"
+        android:layout_width="@dimen/btn_width145"
+        android:layout_height="@dimen/btn_height45"
+        android:layout_gravity="end"
+        android:textAlignment="center"
+        android:textSize="@dimen/font"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/placeTextView2"
+        android:layout_width="@dimen/btn_width60"
+        android:layout_height="@dimen/btn_height45"
+        android:layout_gravity="start"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/font"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/reservedTextView"
+        android:layout_width="@dimen/btn_width145"
+        android:layout_height="@dimen/btn_height45"
+        android:layout_gravity="end"
+        android:textAlignment="center"
+        android:textSize="@dimen/font"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+</android.widget.LinearLayout>

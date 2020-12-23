@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_size_land"
+        android:layout_height="@dimen/logo_size_land"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <ImageView
+        android:id="@+id/main_page_pic"
+        android:layout_width="@dimen/main_pic_width_land"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_page_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/margin5" />
+
+    <ImageView
+        android:id="@+id/gc_logo"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_height_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        android:layout_marginTop="@dimen/margin30"
+        android:src="@drawable/georgian_college_logo" />
+
+    <TextView
+        android:id="@+id/main_text_view"
+        android:layout_width="299dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/main_string"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size25"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="@dimen/margin30"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin30"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

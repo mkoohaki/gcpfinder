@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "222693805222",
+    "firebase_url": "https://gcparkingspacefinder-3b2d9.firebaseio.com",
+    "project_id": "gcparkingspacefinder-3b2d9",
+    "storage_bucket": "gcparkingspacefinder-3b2d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222693805222:android:fa22cda75c5cfe7b183867",
+        "android_client_info": {
+          "package_name": "com.gc200412272.gcparkingspacefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222693805222-nfoja8pr685vtsti98k9cs7d49rlt9la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCwClyGOktGfo1WY756lj41Mmn8GkxFV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222693805222-nfoja8pr685vtsti98k9cs7d49rlt9la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

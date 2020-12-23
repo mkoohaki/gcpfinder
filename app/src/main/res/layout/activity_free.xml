@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Free">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/second_page_background_color" />
+
+    <ImageView
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_background_height80"
+        android:background="@color/background_color"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_size_smaller"
+        android:layout_height="@dimen/logo_size_smaller"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="@dimen/btn_width50"
+        android:layout_height="@dimen/btn_height30"
+        android:background="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin27"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin13"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin13"
+        app:srcCompat="@drawable/exit"
+        app:backgroundTint="@color/second_page_background_color"
+        app:tint="@color/background_color"/>
+
+    <TextView
+        android:id="@+id/txt_area"
+        android:layout_width="@dimen/btn_width55"
+        android:layout_height="@dimen/btn_height55"
+        android:layout_marginTop="@dimen/margin13"
+        android:layout_marginEnd="@dimen/margin13"
+        android:background="@drawable/txt_area"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size40"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_logout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/placesRecyclerView"
+        android:layout_marginTop="@dimen/margin120" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

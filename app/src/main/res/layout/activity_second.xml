@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/second_page_background_color" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:src="@drawable/second_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/second_page_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_page_map"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/margin20"/>
+
+    <Button
+        android:id="@+id/button_second_page"
+        android:layout_width="@dimen/btn_width200"
+        android:layout_height="@dimen/button_size60"
+        android:text="@string/areas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_google_maps"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/button_second_page60"
+        android:textSize="@dimen/btn_text_size"
+        android:textColor="@color/second_page_background_color"/>
+
+    <TextView
+        android:id="@+id/submit_space_land"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/explain"
+        android:textAlignment="center"
+        android:textColor="@color/background_color"
+        android:textSize="@dimen/text_size20"
+        app:layout_constraintTop_toBottomOf="@id/button_second_page"
+        android:layout_marginTop="@dimen/margin20"/>
+    <Button
+        android:id="@+id/btn_m"
+        android:layout_width="@dimen/btn_width50"
+        android:layout_height="@dimen/btn_height100"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="@dimen/margin55"
+        app:layout_constraintStart_toStartOf="@id/second_page_pic"
+        android:layout_marginStart="@dimen/margin65" />
+
+    <Button
+        android:id="@+id/btn_k"
+        android:layout_width="@dimen/btn_width65"
+        android:layout_height="@dimen/btn_height42"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="@dimen/margin160"
+        app:layout_constraintStart_toStartOf="@id/second_page_pic"
+        android:layout_marginStart="@dimen/margin50" />
+
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="@dimen/btn_width65"
+        android:layout_height="@dimen/btn_height42"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="@dimen/margin205"
+        app:layout_constraintStart_toStartOf="@id/second_page_pic"
+        android:layout_marginStart="@dimen/margin50" />
+
+    <Button
+        android:id="@+id/btn_bk"
+        android:layout_width="@dimen/btn_width50"
+        android:layout_height="@dimen/btn_height80"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="@dimen/margin170"
+        app:layout_constraintStart_toStartOf="@id/second_page_pic" />
+
+    <Button
+        android:id="@+id/btn_bb"
+        android:layout_width="@dimen/btn_height100"
+        android:layout_height="@dimen/btn_height20"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/second_page_pic"
+        android:layout_marginBottom="@dimen/margin5"
+        app:layout_constraintStart_toStartOf="@id/second_page_pic"
+        android:layout_marginStart="@dimen/margin60"/>
+
+    <Button
+        android:id="@+id/btn_n"
+        android:layout_width="@dimen/btn_width50"
+        android:layout_height="@dimen/btn_height35"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="@dimen/margin55"
+        app:layout_constraintEnd_toEndOf="@id/second_page_pic"
+        android:layout_marginEnd="@dimen/margin125" />
+
+    <Button
+        android:id="@+id/btn_eh"
+        android:layout_width="@dimen/btn_width50"
+        android:layout_height="@dimen/btn_height45"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="@id/second_page_pic"
+        android:layout_marginEnd="@dimen/margin125" />
+
+    <Button
+        android:id="@+id/btn_d"
+        android:layout_width="@dimen/btn_width65"
+        android:layout_height="@dimen/btn_height80"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/second_page_pic"
+        android:layout_marginTop="@dimen/margin90"
+        app:layout_constraintEnd_toEndOf="@id/second_page_pic"
+        android:layout_marginEnd="@dimen/margin60" />
+
+    <Button
+        android:id="@+id/btn_f"
+        android:layout_width="@dimen/btn_width65"
+        android:layout_height="@dimen/btn_height85"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/second_page_pic"
+        android:layout_marginBottom="@dimen/margin5"
+        app:layout_constraintEnd_toEndOf="@id/second_page_pic"
+        android:layout_marginEnd="@dimen/margin37" />
+
+    <Button
+        android:id="@+id/btn_g"
+        android:layout_width="@dimen/btn_width35"
+        android:layout_height="@dimen/btn_height55"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/second_page_pic"
+        app:layout_constraintEnd_toEndOf="@id/second_page_pic" />
+
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="@dimen/btn_width45"
+        android:layout_height="@dimen/btn_height45"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/second_page_pic"
+        android:layout_marginBottom="@dimen/margin20"
+        app:layout_constraintEnd_toEndOf="@id/second_page_pic"
+        android:layout_marginEnd="@dimen/margin120" />
+
+    <Button
+        android:id="@+id/btn_google_maps"
+        android:layout_width="@dimen/btn_width200"
+        android:layout_height="@dimen/btn_height40"
+        android:text="@string/where_am_i"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_page_pic"
+        android:layout_marginTop="@dimen/margin20"
+        android:textSize="@dimen/btn_width16"
+        android:background="@drawable/btn_google_maps_border"
+        android:textColor="@color/background_color"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin20"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin20"
+        app:srcCompat="@drawable/exit"
+        app:backgroundTint="@color/background_color"
+        app:tint="@color/second_page_background_color"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

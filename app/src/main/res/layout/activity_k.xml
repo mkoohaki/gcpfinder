@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_K">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/second_page_background_color" />
+
+    <ImageView
+        android:id="@+id/top_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_background_height80"
+        android:background="@color/background_color"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_size_smaller"
+        android:layout_height="@dimen/logo_size_smaller"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="@dimen/btn_width50"
+        android:layout_height="@dimen/btn_height30"
+        android:background="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin27"/>
+
+    <ImageView
+        android:id="@+id/third_page_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/image_height430"
+        android:src="@drawable/kv"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/image_frame"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/image_width240"
+        android:layout_height="@dimen/image_height430"
+        app:layout_constraintTop_toTopOf="@+id/third_page_pic"
+        app:layout_constraintStart_toStartOf="@+id/third_page_pic"
+        android:background="@android:color/transparent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin13"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin13"
+        app:srcCompat="@drawable/exit"
+        app:backgroundTint="@color/second_page_background_color"
+        app:tint="@color/background_color"/>
+
+    <TextView
+        android:id="@+id/txt_area"
+        android:layout_width="@dimen/btn_width55"
+        android:layout_height="@dimen/btn_height55"
+        android:layout_marginTop="@dimen/margin13"
+        android:layout_marginEnd="@dimen/margin13"
+        android:background="@drawable/txt_area"
+        android:text="@string/area_k"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size40"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_logout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="@dimen/padding1"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/txt_submit_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zone"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size20"
+        android:textColor="@color/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/third_page_pic"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginStart="@dimen/margin20" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/btn_width35"
+        android:layout_height="@dimen/btn_height35"
+        android:layout_marginStart="@dimen/margin37"
+        android:layout_marginTop="@dimen/margin18"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/third_page_pic"
+        app:layout_constraintStart_toEndOf="@id/txt_submit_zone"
+        android:background="@drawable/spinner" />
+
+    <TextView
+        android:id="@+id/txt_submit_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size20"
+        android:textColor="@color/background_color"
+        app:layout_constraintStart_toStartOf="@id/txt_submit_zone"
+        app:layout_constraintTop_toBottomOf="@id/txt_submit_zone"
+        android:layout_marginTop="@dimen/margin20" />
+
+    <EditText
+        android:id="@+id/txt_number"
+        android:layout_width="@dimen/btn_width35"
+        android:layout_height="@dimen/btn_height35"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@drawable/txt_number"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/second_page_background_color"
+        android:textSize="@dimen/text_size20"
+        app:layout_constraintStart_toEndOf="@id/txt_submit_number"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        android:maxEms="@android:integer/config_longAnimTime"/>
+
+    <!-- Code from  https://developer.android.com/guide/topics/ui/controls/radiobutton-->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/spinner"
+        android:layout_marginStart="@dimen/margin15"
+        app:layout_constraintTop_toBottomOf="@id/third_page_pic"
+        android:layout_marginTop="@dimen/margin20"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton_leaving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leaving"
+            android:textSize="@dimen/text_size20"
+            android:textColor="@color/background_color"
+            android:buttonTint="@color/free"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin15"
+            android:text="@string/parking"
+            android:textColor="@color/background_color"
+            android:textSize="@dimen/text_size20"
+            android:buttonTint="@color/reserved"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="@dimen/btn_width110"
+        android:layout_height="@dimen/btn_height80"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin20"
+        app:layout_constraintTop_toBottomOf="@id/third_page_pic"
+        android:background="@drawable/button_second_page60"
+        android:textSize="@dimen/text_size25"
+        android:textColor="@color/second_page_background_color"
+        android:layout_marginTop="@dimen/margin25"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

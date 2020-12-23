@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_size_land"
+        android:layout_height="@dimen/logo_size_land"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin10"
+        app:layout_constraintTop_toTopOf="@id/main_page_pic"
+        app:layout_constraintBottom_toBottomOf="@id/main_page_pic" />
+
+    <ImageView
+        android:id="@+id/main_page_pic"
+        android:layout_width="@dimen/main_pic_width_land"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_page_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginStart="@dimen/margin15"/>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/btn_width170"
+        android:layout_height="@dimen/btn_height50"
+        android:text="@string/login"
+        app:layout_constraintStart_toStartOf="@id/main_page_pic"
+        android:layout_marginStart="@dimen/margin50"
+        app:layout_constraintTop_toBottomOf="@id/main_page_pic"
+        android:background="@drawable/button_email"
+        android:textSize="@dimen/text_size25"
+        android:textColor="@color/background_color"
+        android:layout_marginTop="@dimen/margin35"
+        android:paddingStart="@dimen/margin40"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btn_login_google"
+        android:layout_width="@dimen/btn_width170"
+        android:layout_height="@dimen/btn_height50"
+        android:text="@string/google"
+        app:layout_constraintStart_toEndOf="@id/btn_login"
+        android:layout_marginStart="@dimen/margin100"
+        app:layout_constraintTop_toBottomOf="@id/main_page_pic"
+        android:background="@drawable/button_google"
+        android:textSize="@dimen/text_size25"
+        android:textColor="@color/background_color"
+        android:layout_marginTop="@dimen/margin35"
+        android:paddingStart="@dimen/margin40"
+        tools:ignore="RtlSymmetry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

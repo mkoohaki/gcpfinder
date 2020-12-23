@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gc200412272.gcparkingspacefinder">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_Free"></activity>
+        <activity android:name=".FreeAreaActivity" />
+        <activity android:name=".Activity_EH" />
+        <activity android:name=".Activity_N" />
+        <activity android:name=".Activity_M" />
+        <activity android:name=".Activity_K" />
+        <activity android:name=".Activity_G" />
+        <activity android:name=".Activity_F" />
+        <activity android:name=".Activity_D" />
+        <activity android:name=".Activity_BK" />
+        <activity android:name=".Activity_BB" />
+        <activity android:name=".Activity_B" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Activity_A" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
