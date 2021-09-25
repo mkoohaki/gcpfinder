@@ -4,6 +4,11 @@ The name of application: Georgian College Parking Space Finder (GCPFinder)
 ---------------------------------------------------------------------------------------
 Author: Meisam Koohaki   meisam.koohaki@gmail.com 
 ---------------------------------------------------------------------------------------
+
+<img src="Images/gcpfinder1.jpg" width="30%" height=auto> <img src="Images/gcpfinder2.jpg" width="30%" height=auto>
+<img src="Images/gcpfinder3.jpg" width="30%" height=auto>
+
+
 Introduction/ Background: 
 Image this is a cold morning and you get Georgian College at 7:45 but looks there is not a free space
 in the parking, class is starting immediately, and you are looking for a free space. Has it happened
