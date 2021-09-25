@@ -5,8 +5,8 @@ The name of application: Georgian College Parking Space Finder (GCPFinder)
 Author: Meisam Koohaki   meisam.koohaki@gmail.com 
 ---------------------------------------------------------------------------------------
 
-<img src="Images/gcpfinder1.PNG" width="30%" height=auto> <img src="Images/gcpfinder2.PNG" width="30%" height=auto>
-<img src="Images/gcpfinder3.PNG" width="30%" height=auto>
+<img src="Images/gcpfinder1.png" width="30%" height=auto> <img src="Images/gcpfinder2.png" width="30%" height=auto>
+<img src="Images/gcpfinder3.png" width="30%" height=auto>
 
 
 Introduction/ Background: 
