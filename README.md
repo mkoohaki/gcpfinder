@@ -1,10 +1,5 @@
-# MobileAndPervasiveComputingProject
+# gcpfinder
 ---------------------------------------------------------------------------------------
-The name of application: Georgian College Parking Space Finder (GCPFinder)
----------------------------------------------------------------------------------------
-Author: Meisam Koohaki   meisam.koohaki@gmail.com 
----------------------------------------------------------------------------------------
-
 <img src="Images/gcpfinder1.png" width="30%" height=auto> <img src="Images/gcpfinder2.png" width="30%" height=auto>
 <img src="Images/gcpfinder3.png" width="30%" height=auto>
 
@@ -27,9 +22,9 @@ For releasing in Playstore I changed those to min 22 and max 29 because I had is
 
 Database:
 The application connect to Firebase for creating database.
----------------------------------------------------------------------------------------
+
 It displays the result, in area A it shows the result on the image and also in another page if you click on the image.
 In other areas, if you click on the images it shows the result in recycler view like as area A.
 User can change the status of a location by clicking on the item.view in recycler too.
 
-It is published on Playstore called 'GCPFinder', but for undefiend reasons Playstore is not updated it to new version yet.
+This is published on Playstore called 'GCPFinder'.
